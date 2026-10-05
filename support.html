@@ -17,51 +17,83 @@
   h1{font-size:1.7em;margin:0 0 .2em}
   h2{font-size:1.15em;margin-top:1.8em;border-bottom:2px solid var(--accent);
     padding-bottom:.25em;display:inline-block}
+  .lead{color:var(--muted);margin-bottom:1.5em}
   .badge{display:inline-block;background:var(--accent);color:#fff;border-radius:99px;
     padding:3px 12px;font-size:.8em;font-weight:700;margin-bottom:14px}
-  a{color:var(--accent)}
+  .contact{background:var(--bg);border-radius:12px;padding:16px 18px;margin:1em 0}
+  .contact a{font-weight:700;font-size:1.05em;overflow-wrap:anywhere}
+  details{border-top:1px solid rgba(128,128,128,.25);padding:.7em 0}
+  details:last-of-type{border-bottom:1px solid rgba(128,128,128,.25)}
+  summary{cursor:pointer;font-weight:600}
+  details p{margin:.6em 0 .2em}
   ul{padding-left:1.2em}
-  li{margin:.4em 0}
+  li{margin:.35em 0}
+  a{color:var(--accent)}
+  footer{margin-top:2.5em;color:var(--muted);font-size:.9em}
 </style>
 </head>
 <body>
 <main>
   <span class="badge">IoM Theory</span>
   <h1>Support</h1>
+  <p class="lead">Help with IoM Theory, the offline study app for the Isle of Man driving theory
+  test.</p>
 
-  <p>IoM Theory is a study app for the Isle of Man driving theory test, for
-  car and motorcycle learners.</p>
+  <h2>Contact us</h2>
+  <div class="contact">
+    <p style="margin:0 0 .4em">Questions, problems, or spotted an answer you think is wrong?
+    Email us:</p>
+    <a href="mailto:drivingtheoryapps@gmail.com?subject=IoM%20Theory%20support">drivingtheoryapps<wbr>@gmail.com</a>
+  </div>
+  <p>To help us fix things quickly, please tell us your iPhone or iPad model, the iOS
+  version, and the app version (shown in the App Store under <em>Version History</em>).
+  If a question looks wrong, include its wording or a screenshot.</p>
 
-  <h2>Common questions</h2>
-  <ul>
-    <li><strong>How do I switch between car and motorcycle?</strong> Profile tab →
-      Study mode (Car/Motorcycle). Motorcycle mode adds rider lessons and mixes
-      rider questions into every exam.</li>
-    <li><strong>How do I reset my progress?</strong> Profile tab → Reset all
-      progress. This only affects your device — the app stores nothing anywhere
-      else.</li>
-    <li><strong>Are the mock exams like the real test?</strong> Yes — the Full
-      Mock uses the real format: 50 questions in 57 minutes, with a pass mark of
-      43.</li>
-    <li><strong>Does the app cover the hazard perception part of the test?</strong>
-      No — it covers the 50 multiple-choice questions. The real test also has
-      14 hazard perception clips, taken at the same sitting, so practise those
-      with the official materials.</li>
-    <li><strong>Is this an official Isle of Man Government app?</strong> No. It is
-      an independent study aid based on the Isle of Man Highway Code and public
-      guidance. Rules change — always check
-      <a href="https://www.gov.im" rel="noopener">gov.im</a> before your test.</li>
-  </ul>
+  <h2>Frequently asked questions</h2>
 
-  <h2>Report a problem or a content error</h2>
-  <p>Spotted a wrong answer, a typo, or a bug? Please
-  <a href="https://github.com/jsychris/iomtheory-site/issues" rel="noopener">open
-  an issue here</a> with the question text or a screenshot. Content corrections
-  are the highest priority and ship in the next update.</p>
+  <details>
+    <summary>Is this an official Isle of Man government app?</summary>
+    <p>No. IoM Theory is an independent study aid. It isn't made by or affiliated with the Isle of Man Government, and its questions are original. Lessons and questions are written from the Isle of Man Highway Code and public guidance on <a href="https://www.gov.im">gov.im</a>.</p>
+  </details>
+  <details>
+    <summary>Does it cover the hazard perception test?</summary>
+    <p>The app explains the hazard perception part of the real test (14 clips, pass mark 44 out of 75, taken at the same sitting) but doesn't include the video clips themselves, so practise those with the official materials too.</p>
+  </details>
+  <details>
+    <summary>How closely do the mock exams match the real test?</summary>
+    <p>The Full Mock uses the real format: 50 questions in 57 minutes, with a pass mark of 43. Questions are drawn from every topic each time. Quick Mock, Smart Practice and the Dynamic Exam let you practise in shorter sessions.</p>
+  </details>
+  <details>
+    <summary>I'm learning to ride a motorcycle. Does the app cover that?</summary>
+    <p>Yes. Go to <strong>Profile → Study mode</strong> and choose <strong>Motorcycle</strong>. Rider questions are then mixed into every exam. Car mode leaves them out.</p>
+  </details>
+  <details>
+    <summary>Do I need an internet connection or an account?</summary>
+    <p>No to both. Everything works offline, there's no sign-up, and the app has no adverts or tracking.</p>
+  </details>
+  <details>
+    <summary>Will I lose my progress if I change phone?</summary>
+    <p>Your progress is stored only on your device, so it isn't synced between devices. It is kept in your normal iPhone or iPad backup, so restoring a backup to a new device should bring it with you.</p>
+  </details>
+  <details>
+    <summary>How do I reset my progress?</summary>
+    <p>Go to <strong>Profile → Reset all progress</strong> and confirm. This clears your XP, streaks, badges, completed lessons and exam history. It can't be undone.</p>
+  </details>
+  <details>
+    <summary>How up to date is the content?</summary>
+    <p>The content reflects the Isle of Man Highway Code and test format as of 2026. Rules do change, so always check <a href="https://www.gov.im">gov.im</a> before your test. If you think something is out of date, please email us.</p>
+  </details>
+  <details>
+    <summary>Which devices are supported?</summary>
+    <p>iPhone and iPad running iOS 17 or later.</p>
+  </details>
 
   <h2>Privacy</h2>
-  <p>The app collects no data at all. Full details:
-  <a href="privacy.html">Privacy Policy</a>.</p>
+  <p>IoM Theory collects no personal data. Read the full
+  <a href="privacy.html">privacy policy</a>.</p>
+
+  <footer>IoM Theory is an independent study aid and is not affiliated with
+  the Isle of Man Government.</footer>
 </main>
 </body>
 </html>
